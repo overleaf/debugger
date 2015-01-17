@@ -1,0 +1,24 @@
+{
+  "name": "debugger-sharelatex",
+  "version": "0.0.1",
+  "description": "A simple test app used for debugging latency issues",
+  "author": "ShareLaTeX <team@sharelatex>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sharelatex/debugger-sharelatex.git"
+  },
+  "dependencies": {
+    "express": "^4.11.0",
+    "logger-sharelatex": "git+https://github.com/sharelatex/logger-sharelatex.git#v1.0.0",
+    "metrics-sharelatex": "git+https://github.com/sharelatex/metrics-sharelatex.git#v1.0.0",
+    "request": "^2.51.0",
+    "settings-sharelatex": "git+https://github.com/sharelatex/settings-sharelatex.git#v1.0.0"
+  },
+  "devDependencies": {
+    "grunt-execute": "~0.2.1",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt": "~0.4.4",
+    "bunyan": "~0.22.3",
+    "grunt-bunyan": "~0.5.0"
+  }
+}
