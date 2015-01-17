@@ -13,6 +13,9 @@ app = express()
 app.all "/test", (req, res, next) ->
     logger.log "/test called"
     res.status(200).end()
+
+app.get "/status", (req, res, next) ->
+    res.send("debugger is alive")
     
 port = Settings.internal?.debugger?.port
 host = Settings.internal?.debugger?.host
