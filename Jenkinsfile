@@ -34,12 +34,7 @@ pipeline {
     }
     stage('Compile') {
       steps {
-        sh 'node_modules/.bin/grunt compile:app'
-      }
-    }
-    stage('Test') {
-      steps {
-        sh 'node_modules/.bin/grunt test:unit'
+        sh 'node_modules/.bin/grunt coffee:app'
       }
     }
     stage('Package') {
